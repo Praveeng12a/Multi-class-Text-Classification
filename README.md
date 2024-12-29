@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> 34702ddfef32252748d52a2efb15cad334579901
 # Multi-class Text Classification
 
 ## Resume Classification Application
@@ -66,4 +70,7 @@ Below is an example of the application interface showing the resume classificati
 
 ## Hosting and Deployment
 This application is hosted using GitHub and Cloud Connect for seamless access and deployment. Ensure all required files are included in your repository for smooth hosting.
+<<<<<<< HEAD
+=======
 
+>>>>>>> 34702ddfef32252748d52a2efb15cad334579901

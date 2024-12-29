@@ -1,0 +1,15 @@
+step 1: Run the clean_resume.py file to clean the data over all the csv
+step 2: Run the preprocess_data.py to process the data for model training (input=clean_resume output csv file)
+step 3: Run the train_model.py for training the model.
+step 4: Run the deploy_app.py for infrence using streamlit interface
+
+Setup:
+
+# Create a virtual env:
+    conda create --name resume_calssification python=3.10
+    pip install -r requirements.txt
+
+cmd: python3 clean_resume.py
+cmd: python3 preprocess_data.py
+cmd: python3 train_model.py
+cmd: streamlit run deploy_app.py
