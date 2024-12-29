@@ -3,7 +3,7 @@ import re
 from bs4 import BeautifulSoup
 
 # Load the dataset
-file_path = '/home/azureuser/Resume_based_rag_application/resume_classification_project/data/Resume/Resume.csv'
+file_path = './data/Resume/Resume.csv'
 df = pd.read_csv(file_path)
 
 # Function to clean text
@@ -32,7 +32,7 @@ df.columns = df.columns.str.lower()
 df = df.drop_duplicates(subset=['cleaned_resume'])
 
 # Save cleaned data
-output_path = '/home/azureuser/Resume_based_rag_application/resume_classification_project/data/Resume/cleaned_resume_data.csv'
+output_path = './data/Resume/cleaned_resume_data.csv'
 df[['id', 'cleaned_resume', 'category']].to_csv(output_path, index=False)
 
 print(f"Data cleaned and saved to {output_path}")
