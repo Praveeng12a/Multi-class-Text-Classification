@@ -5,7 +5,7 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 from datasets import Dataset
 
 # Load the cleaned data
-data = pd.read_csv('/home/azureuser/Resume_based_rag_application/resume_classification_project/data/cleaned_data.csv')
+data = pd.read_csv('./data/cleaned_data.csv')
 
 # Drop null values and ensure all entries are strings
 data = data.dropna(subset=['cleaned_resume'])
