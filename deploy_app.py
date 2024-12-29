@@ -17,8 +17,8 @@ import os
 MODEL_PATH = "./models/resume_classifier_model"
 LABEL_ENCODER_PATH = "./models/label_encoder.pkl"
 
-print("MODEL_PATH:", os.path.abspath(MODEL_PATH))
-print("LABEL_ENCODER_PATH:", os.path.abspath(LABEL_ENCODER_PATH))
+# print("MODEL_PATH:", os.path.abspath(MODEL_PATH))
+# print("LABEL_ENCODER_PATH:", os.path.abspath(LABEL_ENCODER_PATH))
 
 label_encoder = joblib.load(LABEL_ENCODER_PATH)
 @st.cache_resource()
