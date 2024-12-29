@@ -1,77 +1,32 @@
-# Multi-class-Text-Classification
-Resume Classification Application
+# Multi-class Text Classification
 
-This project is a multi-class text classification application for identifying the category of resumes based on their descriptions. It uses data from the Resume Dataset.
+## Resume Classification Application
 
-Table of Contents
+This project is a multi-class text classification application designed to identify the category of resumes based on their descriptions. The application is built using machine learning techniques and features a user-friendly interface for predictions. The dataset used is sourced from Kaggle: [Resume Dataset](https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset/data).
 
-Description
+---
 
-Environment Setup
+## Table of Contents
+- [Description](#description)
+- [Environment Setup](#environment-setup)
+- [File Execution Workflow](#file-execution-workflow)
+- [Output](#output)
+- [Hosting and Deployment](#hosting-and-deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-File Execution Workflow
+---
 
-Output
+## Description
 
-Description
+The application processes resume data, trains a multi-class text classification model, and provides a user-friendly interface to predict the category of resumes. The dataset contains multiple categories of resumes to facilitate accurate classification.
 
-The application processes resume data, trains a multi-class text classification model, and provides a user-friendly interface to predict the category of resumes. The dataset used for this project contains various categories of resumes and is sourced from Kaggle: Resume Dataset.
+---
 
-Environment Setup
+## Environment Setup
 
-Create a Virtual Environment
-
-Use Conda to create a Python 3.10 environment for this project:
-
+### Create a Virtual Environment
+Use Conda to create and activate a Python 3.10 environment for this project:
+```bash
 conda create --name resume_classification python=3.10
 conda activate resume_classification
-
-Install Dependencies
-
-Install the required Python packages from requirements.txt:
-
-pip install -r requirements.txt
-
-File Execution Workflow
-
-1. Data Cleaning
-
-Run the clean_resume.py script to clean and preprocess the input data.
-
-python3 clean_resume.py
-
-2. Data Preprocessing
-
-Run the preprocess_data.py script to prepare the cleaned data for model training.
-
-python3 preprocess_data.py
-
-3. Model Training
-
-Train the multi-class classification model using the train_model.py script.
-
-python3 train_model.py
-
-4. Application Deployment
-
-Launch the application with the deploy_app.py script to start the Streamlit interface for inference.
-
-streamlit run deploy_app.py
-
-Output
-
-Below is an example of the application interface showing the resume classification output:
-
-
-
-Hosting and Deployment
-
-This application is hosted using GitHub and Cloud Connect for seamless access and deployment.
-
-Contributing
-
-Feel free to fork this repository and contribute to enhancing the application by submitting pull requests or reporting issues.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
