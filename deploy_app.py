@@ -21,12 +21,14 @@ LABEL_ENCODER_PATH = "./models/label_encoder.pkl"
 # print("LABEL_ENCODER_PATH:", os.path.abspath(LABEL_ENCODER_PATH))
 
 label_encoder = joblib.load(LABEL_ENCODER_PATH)
-@st.cache_resource()
+# @st.cache_resource()
 def load_model():
+    print("Loading model, tokenizer, and label encoder...")
     model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
     tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
     label_encoder = joblib.load(LABEL_ENCODER_PATH)
-    return model, tokenizer,label_encoder
+    print("Model, tokenizer, and label encoder loaded successfully.")
+    return model, tokenizer, label_encoder
 
 model, tokenizer,label_encoder = load_model()
 
