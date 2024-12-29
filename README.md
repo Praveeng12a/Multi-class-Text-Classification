@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 34702ddfef32252748d52a2efb15cad334579901
 # Multi-class Text Classification
 
 ## Resume Classification Application
