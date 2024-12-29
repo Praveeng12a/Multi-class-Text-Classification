@@ -13,7 +13,7 @@ import joblib
 #     return text
 
 # Load the data
-data_path = '/home/azureuser/Resume_based_rag_application/resume_classification_project/data/Resume/cleaned_resume_data.csv'
+data_path = './data/Resume/cleaned_resume_data.csv'
 data = pd.read_csv(data_path)
 
 # # Clean the text column
@@ -24,9 +24,9 @@ label_encoder = LabelEncoder()
 data['encoded_category'] = label_encoder.fit_transform(data['category'])
 
 # Save label encoder for deployment
-joblib.dump(label_encoder, '/home/azureuser/Resume_based_rag_application/resume_classification_project/models/label_encoder.pkl')
+joblib.dump(label_encoder, './models/label_encoder.pkl')
 
 # Save the cleaned data
-data[['cleaned_resume', 'encoded_category']].to_csv('/home/azureuser/Resume_based_rag_application/resume_classification_project/data/cleaned_data.csv', index=False)
+data[['cleaned_resume', 'encoded_category']].to_csv('./data/cleaned_data.csv', index=False)
 
-print("Data preprocessing complete. Cleaned data saved to '/home/azureuser/Resume_based_rag_application/resume_classification_project/data/cleaned_data.csv'.")
+print("Data preprocessing complete. Cleaned data saved to './data/cleaned_data.csv'.")
