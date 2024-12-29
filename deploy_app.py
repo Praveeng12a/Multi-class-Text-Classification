@@ -4,7 +4,7 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 import joblib
 # import re
 import os
-from clean_resume import clean_text
+# from clean_resume import clean_text
 
 # # Function to clean text
 # def clean_text(text):
